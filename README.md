@@ -11,6 +11,9 @@ This is a simple web application that allows users to upload, search, and downlo
 - File is uploaded with the naming convention: `<email>_<filename>`.
 - An alert is displayed upon successful upload.
 
+If u click upload ,it actually uploads the file in the S3 bucket but it redirects to a page saying "Internal Server Error".
+Click on Back ,To move to main page and search and download the files u need!!!
+
 ### Search Feature
 - Users can search for files in the S3 bucket.
 - Required input fields: Email and Search Query.
