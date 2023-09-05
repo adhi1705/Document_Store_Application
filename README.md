@@ -8,7 +8,7 @@ This is a simple web application that allows users to upload, search, and downlo
 ### Upload Feature
 - Users can upload files to the S3 bucket.
 - Required input fields: Email and Filename.
-- File is uploaded with the naming convention: `<email>_<filename>.txt`.
+- File is uploaded with the naming convention: `<email>_<filename>`.
 - An alert is displayed upon successful upload.
 
 ### Search Feature
