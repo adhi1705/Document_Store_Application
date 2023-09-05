@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <p>Click on Download to Download the file!!</p>
+    <ul>
+        {% if files %}
+            {% for file in files %}
+                <li>
+                    {{ file.file_name }}
+                    <br>
+                    <a href="{{ url_for('download_file', key=file.key) }}" class="btn btn-primary">Download</a>
+                </li>
+            {% endfor %}
+        {% else %}
+            <li>No such file exists in the cloud.</li>
+        {% endif %}
+    </ul>
+</body>
+</html>
